@@ -40,6 +40,7 @@ class AppTextFormField extends StatelessWidget {
           onTap: onTap,
           child: Icon(
             icon,
+            size: 20,
             color: AppColors.purple,
           ),
         ),
