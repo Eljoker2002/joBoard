@@ -21,7 +21,7 @@ class AppTextFormField extends StatelessWidget {
       onSaved: onSaved,
       cursorColor: AppColors.purple,
       style: TextStyle(
-        color: AppColors.gray,
+        color: AppColors.darkGray,
         fontSize: 16,
         fontWeight: FontWeight.bold,
       ),
@@ -29,10 +29,9 @@ class AppTextFormField extends StatelessWidget {
         contentPadding: EdgeInsets.all(16),
         border: InputBorder.none,
         filled: true,
-        fillColor: AppColors.lightGray,
         hintText: text,
         hintStyle: TextStyle(
-          color: AppColors.gray,
+          color: AppColors.darkGray,
           fontSize: 16,
           fontWeight: FontWeight.bold,
         ),
@@ -40,7 +39,7 @@ class AppTextFormField extends StatelessWidget {
           onTap: onTap,
           child: Icon(
             icon,
-            size: 20,
+            size: 22,
             color: AppColors.purple,
           ),
         ),

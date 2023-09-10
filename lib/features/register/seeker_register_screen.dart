@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard/core/app_colors.dart';
+import 'package:joboard/widgets/app_button.dart';
+import 'package:joboard/widgets/app_text.dart';
 import 'package:joboard/widgets/app_text_form_field.dart';
 
-class RegisterScreen extends StatelessWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
+class SeekerRegisterScreen extends StatelessWidget {
+  const SeekerRegisterScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
@@ -39,11 +42,10 @@ class RegisterScreen extends StatelessWidget {
               SizedBox(
                 height: 4,
               ),
-              Text(
-                "password should contain capital an lower characters ,number ,and any special characters",
-                style: TextStyle(
-                  fontSize: 13,
-                ),
+              AppText(
+                fontSize: 14,
+                title:
+                    "password should contain capital an lower characters ,number ,and any special characters",
               ),
               SizedBox(height: 24),
               AppTextFormField(
@@ -64,41 +66,25 @@ class RegisterScreen extends StatelessWidget {
                 onSaved: (v) {},
               ),
               SizedBox(height: 24),
-              Container(
-                height: 34,
-                width: 190,
-                color: AppColors.purple,
-                child: Center(
-                  child: Text(
-                    "Register",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.white,
-                    ),
-                  ),
-                ),
+              AppButton(
+                title: 'Register',
+                onTap: () {},
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 6),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "already have an Account?",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.gray,
-                    ),
+                  AppText(
+                    title: "already have an Account?",
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
                   ),
                   SizedBox(width: 10),
-                  Text(
-                    "log in",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.purple,
-                    ),
+                  AppText(
+                    title: "log in",
+                    fontSize: 15,
+                    color: AppColors.purple,
+                    fontWeight: FontWeight.bold,
                   ),
                 ],
               ),
@@ -130,26 +116,22 @@ class RegisterScreen extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Container(
+                width: 200,
+                height: 42,
+                color: AppColors.lightGray,
                 child: Row(
                   children: [
                     Spacer(),
                     Icon(FontAwesomeIcons.google),
                     Spacer(),
-                    Text(
-                      "Sign up with Google",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.gray,
-                      ),
+                    AppText(
+                      title: "Sign up with Google",
+                      fontSize: 15,
                     ),
                     Spacer(),
                   ],
                 ),
-                width: 200,
-                height: 42,
-                color: AppColors.lightGray.withOpacity(.24),
-              )
+              ),
             ],
           ),
         ),
