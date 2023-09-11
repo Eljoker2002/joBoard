@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
@@ -98,8 +97,6 @@ class AdvertiserRegisterScreen extends StatelessWidget {
                 color: AppColors.lightGray,
                 child: Row(
                   children: [
-                    Spacer(),
-                    Icon(FontAwesomeIcons.google),
                     Spacer(),
                     AppText(
                       title: "Sign up with Google",

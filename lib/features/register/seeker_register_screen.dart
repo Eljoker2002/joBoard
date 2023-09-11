@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
@@ -35,7 +34,7 @@ class SeekerRegisterScreen extends StatelessWidget {
               ),
               SizedBox(height: 24),
               AppTextFormField(
-                icon: FontAwesomeIcons.eyeSlash,
+                icon:Icons.ice_skating,
                 text: "Password",
                 onSaved: (v) {},
               ),
@@ -49,13 +48,13 @@ class SeekerRegisterScreen extends StatelessWidget {
               ),
               SizedBox(height: 24),
               AppTextFormField(
-                icon: FontAwesomeIcons.graduationCap,
+                icon: Icons.ice_skating,
                 text: "Faculty (optional)",
                 onSaved: (v) {},
               ),
               SizedBox(height: 24),
               AppTextFormField(
-                icon: FontAwesomeIcons.bookOpen,
+                icon: Icons.ice_skating,
                 text: "Study field (optional)",
                 onSaved: (v) {},
               ),
@@ -122,7 +121,6 @@ class SeekerRegisterScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Spacer(),
-                    Icon(FontAwesomeIcons.google),
                     Spacer(),
                     AppText(
                       title: "Sign up with Google",
