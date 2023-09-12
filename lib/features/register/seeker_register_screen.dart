@@ -3,6 +3,7 @@ import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
 import 'package:joboard/widgets/app_text_form_field.dart';
+import 'package:joboard/widgets/google_button.dart';
 
 class SeekerRegisterScreen extends StatelessWidget {
   const SeekerRegisterScreen({Key? key}) : super(key: key);
@@ -114,22 +115,8 @@ class SeekerRegisterScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 10),
-              Container(
-                width: 200,
-                height: 42,
-                color: AppColors.lightGray,
-                child: Row(
-                  children: [
-                    Spacer(),
-                    Spacer(),
-                    AppText(
-                      title: "Sign up with Google",
-                      fontSize: 15,
-                    ),
-                    Spacer(),
-                  ],
-                ),
-              ),
+              GoogleButton(),
+              SizedBox(height: 16),
             ],
           ),
         ),

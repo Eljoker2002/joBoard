@@ -3,6 +3,7 @@ import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
 import 'package:joboard/widgets/app_text_form_field.dart';
+import 'package:joboard/widgets/google_button.dart';
 
 class AdvertiserRegisterScreen extends StatelessWidget {
   const AdvertiserRegisterScreen({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class AdvertiserRegisterScreen extends StatelessWidget {
               SizedBox(height: 32),
               AppTextFormField(
                 onSaved: (v) {},
-                icon: Icons.person_pin,
+                icon: Icons.person,
                 text: "User Name",
               ),
               SizedBox(height: 24),
@@ -91,21 +92,7 @@ class AdvertiserRegisterScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                width: 200,
-                height: 42,
-                color: AppColors.lightGray,
-                child: Row(
-                  children: [
-                    Spacer(),
-                    AppText(
-                      title: "Sign up with Google",
-                      fontSize: 15,
-                    ),
-                    Spacer(),
-                  ],
-                ),
-              ),
+              GoogleButton(),
             ],
           ),
         ),

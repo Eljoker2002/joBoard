@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:joboard/features/register/advertiser_register_screen.dart';
+import 'package:joboard/features/register/seeker_register_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AdvertiserRegisterScreen(),
+      home: SeekerRegisterScreen(),
     );
   }
 }
