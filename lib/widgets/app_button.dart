@@ -29,7 +29,7 @@ class AppButton extends StatelessWidget {
         color: color,
         child: Center(
           child: Text(
-            "Register",
+            title,
             style: TextStyle(
               fontSize: fontSize,
               fontWeight: FontWeight.bold,
