@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
+import 'package:joboard/widgets/app_text_button.dart';
 import 'package:joboard/widgets/app_text_form_field.dart';
 import 'package:joboard/widgets/google_button.dart';
 
@@ -57,12 +58,12 @@ class AdvertiserRegisterScreen extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(width: 10),
-                  AppText(
+                  SizedBox(width: 5),
+                  AppTextButton(
                     title: "log in",
-                    fontSize: 15,
                     color: AppColors.purple,
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ],
               ),

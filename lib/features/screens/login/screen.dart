@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard/core/app_colors.dart';
 import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
+import 'package:joboard/widgets/app_text_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -73,14 +74,11 @@ class LoginScreen extends StatelessWidget {
                         title: "Login",
                         onTap: () {},
                       ),
-                      SizedBox(height: 16),
-                      TextButton(
-                          onPressed: () {},
-                          child: AppText(
-                            title: "forget password?",
-                            fontSize: 18,
-                            color: AppColors.black,
-                          )),
+                      SizedBox(height: 10),
+                      AppTextButton(
+                        title: "forget password?",
+                        fontSize: 18,
+                      ),
                     ],
                   ),
                 ),

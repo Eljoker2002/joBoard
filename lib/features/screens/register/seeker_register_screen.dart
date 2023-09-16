@@ -4,6 +4,7 @@ import 'package:joboard/widgets/app_button.dart';
 import 'package:joboard/widgets/app_text.dart';
 import 'package:joboard/widgets/app_text_form_field.dart';
 import 'package:joboard/widgets/google_button.dart';
+import '../../../widgets/app_text_button.dart';
 
 class SeekerRegisterScreen extends StatelessWidget {
   const SeekerRegisterScreen({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class SeekerRegisterScreen extends StatelessWidget {
               ),
               SizedBox(height: 24),
               AppTextFormField(
-                icon:Icons.ice_skating,
+                icon: Icons.ice_skating,
                 text: "Password",
                 onSaved: (v) {},
               ),
@@ -79,12 +80,12 @@ class SeekerRegisterScreen extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(width: 10),
-                  AppText(
+                  SizedBox(width: 5),
+                  AppTextButton(
                     title: "log in",
-                    fontSize: 15,
                     color: AppColors.purple,
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ],
               ),
